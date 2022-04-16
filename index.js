@@ -16,7 +16,8 @@ var contactList = [
     
     {
         name: "Tony Stark", 
-        phone: "123456789"
+        phone: "123456789", 
+        remarks : "No label"
     },
     
 
@@ -59,7 +60,8 @@ app.post('/create-contact', function(req, res){
 
     Contact.create({
         name:req.body.name,
-        phone: req.body.phone
+        phone: req.body.phone,
+        remarks: req.body.remarks
     }, function(err, newContact){
         if(err){
             console.log('error in creating a contact!');

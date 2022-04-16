@@ -8,7 +8,12 @@ const contactSchema = new mongoose.Schema({
     phone:{
         type: String,
         required: true
+    }, 
+    remarks:{
+        type: String,
+        required: true
     }
+
 });
 
 const Contact = mongoose.model('Contact', contactSchema);

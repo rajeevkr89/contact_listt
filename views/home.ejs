@@ -19,7 +19,10 @@
                         <div class="details">
                             <p> <%= i.name %> </p>
                             <p><%= i.phone %> </p>
+                            <p><%= i.remarks %> </p>
+                            
                         </div>
+                        
                         <div class ="delete-button">
                             <a href = "/delete-contact/?id=<%= i._id %> ">
                                 <i class = "fas fa-window-close"></i>
@@ -35,6 +38,8 @@
 
             <input type = "text" name = "name" placeholder = "Enter Name" required>
             <input type = "number" name = "phone" placeholder="Enter Phone" required>
+            <input type = "text" name = "remarks" placeholder="Enter remarks" required>
+
 
             <button type = "submit">Add</button>
         </form>
